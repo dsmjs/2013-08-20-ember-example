@@ -1,0 +1,16 @@
+{{#unless liked}}
+
+  <div id="main">
+    <button id="like" {{action cliq}}>like</button>
+  </div>
+
+{{/unless}}
+
+{{#if liked}}
+
+  <div id="footer">
+    <button id="undo" {{action cliq}}>undo</button>
+    <span>You liked this post</span>
+  </div>
+
+{{/if}}
